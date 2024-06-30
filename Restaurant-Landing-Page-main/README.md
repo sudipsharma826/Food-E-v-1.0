@@ -54,8 +54,6 @@ The `script.js` file contains:
 - Functions to switch between menu tabs (dishes, starters, desserts, drinks)
 - Event listeners for tab buttons
 
-Note: The JavaScript does not provide full interactivity. Buttons like "Book a Table" or "Order Now" are for display purposes only and do not trigger any actions.
-
 ## Credits
 
 - Fonts: Google Fonts (Baskervville, Lato, Open Sans, Playfair Display, Poppins)
