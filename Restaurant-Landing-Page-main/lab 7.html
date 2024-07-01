@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Demonstration</title>
+    <style>
+.color-name {
+    color: blue;
+}
+
+.color-rgb {
+    color: rgb(255, 0, 0); /* Red */
+}
+
+.color-hex {
+    color: #00ff00; /* Green */
+}
+
+.color-rgba {
+    color: rgba(0, 0, 255, 0.5); /* Blue with 50% opacity */
+}
+
+.color-hsl {
+    color: hsl(120, 100%, 50%); /* Green */
+}
+
+.color-hsla {
+    color: hsla(120, 100%, 50%, 0.5); /* Green with 50% opacity */
+}
+
+/* Text Formatting */
+.text-format {
+    color: #333;
+    line-height: 1.5;
+    font-family: 'Arial, sans-serif';
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* Background Styling */
+.background-color {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.background-image {
+    background-image: url('https://via.placeholder.com/300');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+</style></head>
+<body>
+    <h1>CSS Properties Demonstration</h1>
+    
+    <section>
+        <h2>Color Examples</h2>
+        <p class="color-name">This text is styled using a color name.</p>
+        <p class="color-rgb">This text is styled using RGB values.</p>
+        <p class="color-hex">This text is styled using HEX values.</p>
+        <p class="color-rgba">This text is styled using RGBA values.</p>
+        <p class="color-hsl">This text is styled using HSL values.</p>
+        <p class="color-hsla">This text is styled using HSLA values.</p>
+    </section>
+    
+    <section>
+        <h2>Text Formatting</h2>
+        <p class="text-format">This text demonstrates various text formatting options.</p>
+    </section>
+    
+    <section>
+        <h2>Background Styling</h2>
+        <div class="background-color">This div has a background color.</div>
+        <div class="background-image">This div has a background image.</div>
+    </section>
+</body>
+</html>
