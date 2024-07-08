@@ -1,0 +1,662 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+}
+:root {
+  --black: #231f20;
+  --blue: #e5f0faff;
+  --navy-blue: #bdd5ea;
+  --light: #f0f4f4ff;
+  --platinum: #e1e7e7ff;
+  --gray: rgb(99, 101, 103);
+  --red: #bb4430;
+  --green: #28c76f;
+  --dark-green: #06863f;
+  --white: #ffffff;
+}
+
+/* header */
+header {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  width: 100%;
+  font-size: 1.1rem;
+  background-color: var(--light);
+  color: var(--black);
+  padding: 0 4rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+#logo {
+  font-size: 1.75rem;
+  border-radius: 50%;
+  padding: 0.25rem;
+  border: 2px solid var(--black);
+  margin: 0.7rem 0;
+}
+nav {
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  color: var(--black);
+}
+nav a:hover {
+  color: var(--green);
+}
+
+
+/* home */
+.home {
+  padding-top: 5rem;
+  font-family: "Baskervville", serif;
+  display: flex;
+  background-image: url("images/home.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  font-size: 1.25rem;
+  max-width: 55%;
+  z-index: 1;
+}
+.hero-section h3 {
+  color: var(--black);
+}
+.hero-section h1 {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.hero-section h6 {
+  font-size: 1.25rem;
+}
+.hero-section button {
+  font-family: "Baskervville", serif;
+  width: 12.5rem;
+  font-size: 1.5rem;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 5rem;
+  padding: 0.5rem;
+  margin-top: 3.5rem;
+  border: none;
+}
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.home-bottom-image {
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+}
+
+
+
+/* about us */
+.about-us {
+  background-color: var(--blue);
+  display: flex;
+  padding: 5rem 10rem 0;
+  gap: 5rem;
+  font-family: "Open Sans", sans-serif;
+  padding-bottom: 3rem;
+}
+h3 {
+  font-size: 2rem;
+  color: var(--gray);
+}
+h2 {
+  color: var(--black);
+  font-size: 3rem;
+}
+.about-info h3 {
+  padding-top: 3rem;
+}
+.about-info p {
+  font-size: 1.15rem;
+  margin-top: 1rem;
+}
+
+/* menu */
+.menu {
+  display: flex;
+  background-color: var(--navy-blue);
+  justify-content: space-between;
+  font-family: "Baskervville", serif;
+  padding: 5rem 0;
+}
+
+.menu-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("images/menu-left.png"), url("images/menu-right.png");
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+  background-size: 32% 100%;
+}
+.menu-details h3 {
+  margin-bottom: 0.5rem;
+}
+.menu-tab {
+  margin-top: 1.5rem;
+}
+.menu-tab button {
+  font-family: "Baskervville", serif;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+.dishes-btn,
+.starters-btn,
+.desserts-btn,
+.drinks-btn {
+  background-color: var(--red);
+  color: var(--light);
+}
+
+.dishes,
+.starters,
+.desserts,
+.drinks {
+  margin-top: 3rem;
+  display: flex;
+}
+.menu-card {
+  background-color: var(--light);
+  margin: 0 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+  width: 25%;
+  height: 100%;
+}
+.menu-card:hover {
+  transform: translateY(-0.5rem);
+  transition: all 0.2s linear;
+  box-shadow: 0px 0px 15px 5px rgba(128, 128, 128, 0.5);
+}
+.menu-card img {
+  height: 10rem;
+  width: 15vw;
+  object-fit: cover;
+  object-position: center;
+}
+.menu-card-text {
+  padding-left: 1.2rem;
+}
+.item-name {
+  font-size: 1.2rem;
+}
+.order-btn {
+  margin: 0.5rem 0 1.25rem 1rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  background-color: var(--black);
+  color: var(--light);
+  border: none;
+}
+
+
+/* services */
+.services {
+  font-weight: 600;
+  width: 100%;
+  padding: 4rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue);
+}
+.services-head {
+  text-align: center;
+  font-family: "Baskervville", serif;
+}
+.services-body {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+.services-menu-card {
+  background-color: var(--white);
+  border-radius: 2rem;
+  width: 25%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.services-menu-card:hover {
+  transform: translateY(-1rem);
+  transition: all 0.2s linear;
+  box-shadow: 0px 0px 15px 5px rgba(128, 128, 128, 0.5);
+}
+.service-menu-card-body {
+  padding: 0.5rem 1rem;
+}
+.services-menu-card img {
+  width: 100%;
+  height: 100%;
+}
+.service-name {
+  font-size: 1.75rem;
+  padding-left: 1rem;
+  color: var(--text-primary);
+}
+.service-desciption {
+  color: var(--gray);
+  padding-left: 1rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+.service-menu-card-body button {
+  color: var(--white);
+  background-color: var(--dark-green);
+}
+
+/* footer */
+footer{
+  background-image: url("images/contact-left.png"), url("images/contact-right.png");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+  background-size: 20% 70%;
+  background-color: var(--navy-blue);
+  padding: 5rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-body{
+  display: flex;
+  gap: 2rem;
+  color: var(--black);
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+  margin: 2rem 0 2.5rem;
+}
+.contact-body img {
+  filter: brightness(0) saturate(100%);
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1.25rem;
+}
+
+.timing,.location,.phone,.email{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.copyright{
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+
+/* follow */
+.follow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #e4405f;
+  color: #fff;
+}
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #0a66c2;
+  color: #fff;
+}
+
+/* for showing change in menu category */
+.active-btn {
+  font-weight: 500;
+  background-color: var(--white);
+  color: var(--red);
+}
+.hide {
+  display: none;
+}
+/*Order Form Css */
+.order-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 2px solid #b51111;
+  z-index: 1000;
+}
+.order-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+/* CSS for Order Form */
+.order-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.order-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.order-form img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.order-form p {
+  font-size: 16px;
+  color: #555;
+}
+
+.order-form #order-id {
+  font-weight: bold;
+}
+
+.order-form form {
+  margin-top: 20px;
+}
+
+.order-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.order-form input[type="text"], 
+.order-form input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.order-form input[type="text"]:focus, 
+.order-form input[type="number"]:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.order-form #order-items {
+  margin-bottom: 10px;
+}
+
+.order-form #total-amount {
+  font-weight: bold;
+}
+
+.order-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.order-form button:hover {
+  background-color: #0056b3;
+}
+
+.order-form #add-more-items {
+  background-color: #28a745;
+}
+
+.order-form #add-more-items:hover {
+  background-color: #218838;
+}
+
+.order-form #place-order {
+  background-color: #dc3545;
+}
+
+.order-form #place-order:hover {
+  background-color: #c82333;
+}
+
+.order-form #cancel-order {
+  background-color: #6c757d;
+}
+
+.order-form #cancel-order:hover {
+  background-color: #5a6268;
+}
+/*Book table Form*/
+.book-table{
+  margin: 0.5rem 0 1.25rem 1rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1rem;
+  background-color: var(--black);
+  color: var(--light);
+  border: none;
+}
+/* Overlay */
+.table-reservation-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Form */
+.table-reservation-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #b51111;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-reservation-form h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.table-reservation-form img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.table-reservation-form p {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.table-reservation-form #confirmation-id {
+  font-weight: bold;
+}
+
+.table-reservation-form form {
+  margin-top: 20px;
+}
+
+.table-reservation-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.table-reservation-form input[type="text"],
+.table-reservation-form input[type="number"] {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.table-reservation-form input[type="text"]:focus,
+.table-reservation-form input[type="number"]:focus {
+  outline: none;
+  border-color: #66afe9;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.table-reservation-form button:first-child {
+  background-color: #35dc4e;
+  color: #fff;
+  border: none;
+}
+
+.table-reservation-form button:first-child:hover {
+  background-color: #2ca341;
+}
+
+.table-reservation-form button:last-child {
+  background-color: #c82333;
+  color: #fff;
+  border: none;
+  margin-left: 10px; 
+}
+
+.table-reservation-form button:last-child:hover {
+  background-color: #9c1f2c;
+}
