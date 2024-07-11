@@ -449,6 +449,7 @@ footer{
 }
 /* CSS for Order Form */
 .order-form {
+  font-weight: bold;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -459,6 +460,7 @@ footer{
 }
 
 .order-form h2 {
+  font-weight: bold;
   text-align: center;
   font-size: 24px;
   color: #333;
@@ -483,6 +485,7 @@ footer{
 
 .order-form form {
   margin-top: 20px;
+  font-weight: bold;
 }
 
 .order-form label {
@@ -496,7 +499,7 @@ footer{
   padding: 8px;
   margin-bottom: 10px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid #51a84c;
   border-radius: 4px;
 }
 
@@ -509,10 +512,12 @@ footer{
 
 .order-form #order-items {
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .order-form #total-amount {
   font-weight: bold;
+  color: red;
 }
 
 .order-form button {
@@ -535,7 +540,7 @@ footer{
 }
 
 .order-form #add-more-items:hover {
-  background-color: #218838;
+  background-color:orange;
 }
 
 .order-form #place-order {
@@ -543,7 +548,7 @@ footer{
 }
 
 .order-form #place-order:hover {
-  background-color: #c82333;
+  background-color:orange;
 }
 
 .order-form #cancel-order {
@@ -551,7 +556,7 @@ footer{
 }
 
 .order-form #cancel-order:hover {
-  background-color: #5a6268;
+  background-color: orange;
 }
 /*Book table Form*/
 .book-table{
@@ -577,6 +582,7 @@ footer{
 
 /* Form */
 .table-reservation-form {
+  font-weight: bold;
   display: none;
   position: fixed;
   top: 50%;
@@ -612,6 +618,7 @@ footer{
 
 .table-reservation-form #confirmation-id {
   font-weight: bold;
+  color: red;
 }
 
 .table-reservation-form form {
@@ -629,7 +636,7 @@ footer{
   padding: 8px;
   margin-bottom: 10px;
   font-size: 14px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(75, 135, 75);
   border-radius: 4px;
 }
 
@@ -641,9 +648,8 @@ footer{
 }
 
 .table-reservation-form button:first-child {
-  background-color: #35dc4e;
-  color: #fff;
-  border: none;
+  background-color:green;
+  color:white;
 }
 
 .table-reservation-form button:first-child:hover {
@@ -658,5 +664,47 @@ footer{
 }
 
 .table-reservation-form button:last-child:hover {
-  background-color: #9c1f2c;
+  background-color:orange;
 }
+/*Book Table Button*/
+/* Confirm Reservation  */
+#confirm-reservation {
+  background-color: #4CAF50; 
+  color: white; /* White text */
+  padding: 12px 25px;
+  border: none;
+  border-radius: 18px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  margin-left: 4px;
+}
+
+#confirm-reservation:hover {
+  background-color: #45a049; 
+  transform: scale(1.05); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Cancel button styles */
+#cancel-reservation {
+  background-color: #f44336; 
+  color: white; 
+  padding: 12px 25px;
+  border: none;
+  border-radius: 18px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#cancel-reservation:hover {
+  background-color: #e53935; 
+  transform: scale(1.05); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+/*Css Ends for the button of table booking */
