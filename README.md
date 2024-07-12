@@ -1,7 +1,6 @@
 # Restaurant Landing Page
 
-This is a static landing page for `Food-I`, a fictional restaurant. The page is designed for viewing on laptop and PC screens, showcasing a concept for a restaurant website. All data, including the restaurant name, location, contact details, and menu items, are imaginary and created for demonstration purposes only.
-
+This is a static landing page for `Food-E`, a fictional restaurant. The page is designed for viewing on laptop and PC screens, showcasing a concept for a restaurant website. All data, including the restaurant name, location, contact details, and menu items, are imaginary and created for demonstration purposes only.
 
 ## Features
 
@@ -15,18 +14,22 @@ This is a static landing page for `Food-I`, a fictional restaurant. The page is 
   - Menu section with switchable tabs
   - Services section
   - Contact section with fictional details
+  - Food Ordering and Table Booking Form with full JavaScript
+  - PHP functionality to transfer data to the database (using XAMPP server)
 
 ## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
+- PHP
 
 ## File Structure
 
 - `index.html` - Main HTML file containing the structure of the webpage
 - `style.css` - CSS file with all styles and layout definitions
 - `script.js` - JavaScript file for menu tab switching functionality
+- `store.php` - Contains the PHP code to handle data transfer to the database
 - `images/` - Directory containing all image assets used in the design
 - `icons/` - Directory containing icon images
 
@@ -53,6 +56,20 @@ The `script.js` file contains:
 
 - Functions to switch between menu tabs (dishes, starters, desserts, drinks)
 - Event listeners for tab buttons
+
+## PHP Functionality
+
+The `store.php` file contains:
+
+- PHP code to handle form submissions and transfer data to the database
+- Instructions for setting up the XAMPP server and placing the file in the `htdocs` directory
+
+
+## Project Credits
+
+- **Frontend Development:** Sudip Sharma
+- **Design:** Amrit Bhandri
+- **PHP Development:** Rohit Acharya
 
 ## Credits
 
