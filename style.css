@@ -40,6 +40,9 @@ header {
   gap: 1rem;
   font-size: 1.2rem;
 }
+.brand-name{
+  color:var(--black);
+}
 #logo {
   font-size: 1.75rem;
   border-radius: 50%;
@@ -217,7 +220,7 @@ h2 {
   font-size: 1.1rem;
   padding: 0.5rem 0.75rem;
   border-radius: 1rem;
-  background-color: var(--black);
+  background-color: green;
   color: var(--light);
   border: none;
 }
@@ -316,6 +319,7 @@ footer{
 .copyright{
   font-size: 1.1rem;
   margin-top: 1.5rem;
+  text-align: center;
 }
 
 /* follow */
@@ -436,6 +440,8 @@ footer{
   padding: 20px;
   border: 2px solid #b51111;
   z-index: 1000;
+  border-radius: 30px;
+  box-shadow:yellowgreen;
 }
 .order-overlay {
   display: none;
@@ -594,6 +600,7 @@ footer{
   border: 2px solid #b51111;
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 45px;
 }
 
 .table-reservation-form h2 {

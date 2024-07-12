@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const orderItem = document.createElement('div');
             orderItem.classList.add('order-item');
             orderItem.innerHTML = `
-                <p>${itemName} - $${itemPrice}</p>
+                <p>${itemName} - Rs - ${itemPrice}</p>
                 <input type="hidden" name="item-name" value="${itemName}">
                 <input type="hidden" name="item-price" value="${itemPrice}">
                 <button type="button" class="decrease-quantity">-</button>
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         function generateOrderId() {
-            return 'ORD-' + Math.floor(Math.random() * 100000);
+            return 'ORD-' + Math.floor(Math.random() * 1000);
         }
 
         function resetOrderForm() {
