@@ -67,9 +67,10 @@ The `store.php` file contains:
 
 ## Project Credits
 
-- **Frontend Development:** Sudip Sharma
-- **Design:** Amrit Bhandri
-- **PHP Development:** Rohit Acharya
+- **Frontend Development:** Sudip Sharma[##sudipsharma826]
+- **PHP Development:** Rohit Acharya[##Rohit-078]
+- **Design:** Amrit Bhandri[##AmritBhandari25]
+
 
 ## Credits
 
