@@ -1,6 +1,6 @@
-# Restaurant Landing Page
+# Food-E 
 
-This is a static landing page for `Food-E`, a fictional restaurant. The page is designed for viewing on laptop and PC screens, showcasing a concept for a restaurant website. All data, including the restaurant name, location, contact details, and menu items, are imaginary and created for demonstration purposes only.
+This is a dynamic landing page for `Food-E`, a fictional restaurant. The page is designed for viewing on laptop and PC screens, showcasing a concept for a restaurant website. All data, including the restaurant name, location, contact details, and menu items, are imaginary and created for demonstration purposes only.
 
 ## Features
 
